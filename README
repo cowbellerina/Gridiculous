@@ -1,0 +1,26 @@
+ABOUT
+
+Gridiculous is a simple utility script for creating guide grids in Adobe
+Photoshop. The script allows you to define values for column count, column
+width and gutter width. The grid can be inserted to the frontmost open document
+or to a new document.
+
+Note: this script has only been tested with Adobe Photoshop CS5 in Macintosh
+environment. Additional testing will take place in the near future.
+
+
+INSTALLATION
+
+1. Move Gridiculous.jsx to Presets/Scripts/ folder inside your Photoshop
+   directory. Example:
+   -> /Applications/Adobe Photoshop CS5/Presets/Scripts/Gridiculous.jsx
+2. (Re)open Photoshop in order to make the script visible.
+
+
+USAGE
+
+In Photoshop, select File > Scripts > Gridiculous
+
+You will be prompted for grid settings. If you have open document(s) you have
+the option to insert the grid to the frontmost document at x position of your
+liking.
