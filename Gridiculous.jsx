@@ -7,7 +7,7 @@
  * 
  * INSTALLATION
  *
- * 1. Move Gridiculous.jsx to Presets/Scripts/ folder inside your Photoshop directory.
+ * 1. Move Gridiculous.jsx to Presets/Scripts/ directory inside your Photoshop directory.
  *    -> Example: /Applications/Adobe Photoshop CS5/Presets/Scripts/Gridiculous.jsx
  * 2. (Re)open Photoshop in order to make the script visible.
  * 
@@ -39,7 +39,7 @@ try {
     if(!gutterWidth || typeof gutterWidth !== 'number')
         throw 'Invalid Gutter Width';
        
-    // Additional grid & document settings
+    // Additional grid & document settings.
     var marginWidth = gutterWidth / 2,
         documentWidth = (columns * (columnWidth + gutterWidth)),
         x = 0,
@@ -56,7 +56,7 @@ try {
         x = parseInt(prompt("Enter grid starting position (i.e. How many pixels from left you want the grid to start?)", 0, "Grid starting position"));
         
         // Sanity check.
-        if(!x || typeof x !== 'number')
+        if(typeof x !== 'number')
             throw 'Invalid grid starting position';
     }
     else
