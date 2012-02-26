@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Gridiculous 1.0a
  * 
  * Author: Jarkko Tuunanen
