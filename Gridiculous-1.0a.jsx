@@ -1,4 +1,11 @@
-﻿#target photoshop
+﻿/**
+ * Gridiculous 1.0a
+ * 
+ * Author: Jarkko Tuunanen
+ * Date: Sun Feb 26 23:02 2012 +0200
+ * 
+ */
+#target photoshop
 
 var gridiculous = (function() {
   
@@ -212,12 +219,12 @@ var gridiculous = (function() {
   // Main init
   //
   function init(){
-    try{
+    try {
       // Check current version of Photoshop.
-      // Guides object was not available through the Photoshop API until CS5.
+      // The Guides object was not accessible through the Photoshop API until CS5.
       // Stop execution immediately if older version.
       if(app.version < "12")
-        throw 'Unfortunately Gridiculous does not work in your current version of Photoshop (' + app.version + ') as Guides were not introduced to the Photoshop API until CS5.';
+        throw 'Unfortunately Gridiculous does not work in your current version of Photoshop (' + app.version + ') since Guides were not introduced to the Photoshop API until CS5 (version 12).';
 
       // Everything OK. Create and show dialog.
       var sd = settingsDialog.create();
